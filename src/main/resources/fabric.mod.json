@@ -1,44 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "craftable_chainmail",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Craftable Chainmail",
+  "description": "Makes chainmail armor craftable.",
   "authors": [
-    "Me!"
+    "Zekromaster"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+    "homepage": "https://github,com/Zekromaster/",
+    "sources": "https://github,com/Zekromaster/CraftableChainmail"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/craftable_chainmail/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "net.glasslauncher.example.events.init.AchievementListener",
-      "net.glasslauncher.example.events.init.BlockListener",
-      "net.glasslauncher.example.events.init.ItemListener",
-      "net.glasslauncher.example.events.init.PlayerHandlerListener",
-      "net.glasslauncher.example.events.init.RecipeListener"
+      "net.zekromaster.minecraft.craftablechainmail.ItemListener",
+      "net.zekromaster.minecraft.craftablechainmail.RecipeListener"
     ],
     "stationapi:event_bus_client": [
-      "net.glasslauncher.example.events.init.KeyBindingListener",
-      "net.glasslauncher.example.events.init.TextureListener",
-      "net.glasslauncher.example.events.ingame.KeyPressedListener"
-    ],
-    "stationapi:event_bus_server": [
-      "net.glasslauncher.example.events.init.ServerInitListener"
+      "net.zekromaster.minecraft.craftablechainmail.TextureListener"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json"
+    "craftablechainmail.mixins.json"
   ],
 
   "depends": {
-    "minecraft": "1.0.0-beta.7.3"
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": "2.0-alpha.2"
   }
 }
