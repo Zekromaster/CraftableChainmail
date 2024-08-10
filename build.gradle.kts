@@ -1,7 +1,7 @@
 import java.nio.charset.Charset
 
 plugins {
-    id("babric-loom") version "1.1.7"
+    id("babric-loom") version "1.6.2"
     id("maven-publish")
     id("com.modrinth.minotaur") version "2.+"
 }
@@ -53,9 +53,14 @@ tasks.jar {
 
 
 loom {
-    gluedMinecraftJar()
-    customMinecraftManifest.set("https://babric.github.io/manifest-polyfill/${property("minecraft_version") as String}.json")
+    @Suppress("UnstableApiUsage")
+    mixin {
+        useLegacyMixinAp = true
+    }
+    customMinecraftManifest.set("https://babric.github.io/manifest-polyfill/${minecraft_version}.json")
+    intermediaryUrl.set("https://maven.glass-launcher.net/babric/babric/intermediary/%1\$s/intermediary-%1\$s-v2.jar")
 }
+
 
 repositories {
     maven {
