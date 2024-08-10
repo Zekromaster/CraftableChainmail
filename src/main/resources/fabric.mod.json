@@ -21,9 +21,6 @@
     "stationapi:event_bus": [
       "net.zekromaster.minecraft.craftablechainmail.ItemListener",
       "net.zekromaster.minecraft.craftablechainmail.RecipeListener"
-    ],
-    "stationapi:event_bus_client": [
-      "net.zekromaster.minecraft.craftablechainmail.TextureListener"
     ]
   },
   "mixins": [
