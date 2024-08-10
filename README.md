@@ -7,8 +7,7 @@ iron rings. Requires [StationAPI](https://github.com/ModificationStation/Station
 Makes use of the `c:rings/iron` tag. 
 
 ## Recipes
-![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/iron_ring_recipe_1.png?raw=true)
-![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/iron_ring_recipe_2.png?raw=true)
+![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/iron_ring_recipe.png?raw=true)
 ![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/chainmail_helmet_recipe.png?raw=true)
 ![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/chainmail_chest_recipe.png?raw=true)
 ![](https://github.com/Zekromaster/CraftableChainmail/blob/trunk/docs/img/chainmail_leggings_recipe.png?raw=true)

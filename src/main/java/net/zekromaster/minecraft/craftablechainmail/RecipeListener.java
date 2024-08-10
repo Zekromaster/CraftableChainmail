@@ -31,15 +31,10 @@ public class RecipeListener {
 
         Identifier type = event.recipeId;
         if (type == RecipeRegisterEvent.Vanilla.CRAFTING_SHAPED.type()) {
-            // Recipes for the rings themselves
+            // Recipe for the rings themselves
             CraftingRegistry.addShapedRecipe(
                 new ItemStack(IRON_RING, AMOUNT_PER_RECIPE),
-                new String[]{"XX ", " XX"},
-                'X', Item.IRON_INGOT
-            );
-            CraftingRegistry.addShapedRecipe(
-                new ItemStack(IRON_RING, AMOUNT_PER_RECIPE),
-                new String[]{" XX", "XX "},
+                new String[]{" X ", "X X", " X "},
                 'X', Item.IRON_INGOT
             );
 
